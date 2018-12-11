@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="/testfixture/includes/head_common_bs.html"-->
+    <title>Test Fixture Tasks</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <!--#include virtual="/testfixture/includes/page_header_bs.html"-->
+      
+      <div class="container">
+	<div class="page-header"> 
+	  <h3>Test Fixture Tasks  <small>Input Options</small> 	    <small id="span_identifier" class="pull-right displaynone"> </small></h3>
+	</div>
+
+	<!-- Tasks section -->
+	<div id="task-alt-dialog"></div>
+
+	<div id="task-dialog" title="Task Calculations">
+
+          <!-- List Stored Sessions -->
+          <form id="list-stored-form" class="form-inline" role="form">  
+            <fieldset>
+	      <legend>Display stored sessions <span class="glyphicon glyphicon-info-sign pull-right"></span> </a> </legend>
+
+              <input class="btn btn-primary my-task-form-submit"  type="submit" value="Run"/> 
+              <div class="my-task-form-status"></div>
+              <div class="my-task-form-list"></div>
+            </fieldset>
+          </form>
+
+          <!-- Restore session -->
+          <form id="restore-stored-form" class="form-inline" role="form">  
+            <fieldset>
+	      <legend>Restore stored sessions <span class="glyphicon glyphicon-info-sign pull-right"></span> </a> </legend>
+
+              <div class="form-group">	      
+		<label class="control-label" for="restore-stored-form-inp-1">Datatset id</label>
+		<input id="restore-stored-form-inp-1" class="form-control" type="text" name="dataset_id"  value="" size="60" /> 
+	      </div>
+
+              <input class="btn btn-primary my-task-form-submit"  type="submit" value="Run"/> 
+              <div class="my-task-form-status"></div>
+              <div class="my-task-form-list"></div>
+            </fieldset>
+          </form>
+
+
+          <!-- Store session -->
+          <form id="store-form" class="form-inline" role="form">  
+            <fieldset>
+	      <legend>Store session <span class="glyphicon glyphicon-info-sign pull-right"></span> </a> </legend>
+
+              <div class="form-group">	      
+		<label class="control-label" for="store-form-inp-1">Datatset id</label>
+		<input id="restore-stored-form-inp-1" class="form-control" type="text" name="dataset_id"  value="" size="60" /> 
+	      </div>
+
+              <input class="btn btn-primary my-task-form-submit"  type="submit" value="Run"/> 
+              <div class="my-task-form-status"></div>
+            </fieldset>
+          </form>
+
+	</div> <!-- end of task dialog -->
+
+	<!-- progress spinner -->
+	<div id="loading">
+	  <div id="loadingcontent">
+	    <p id="loadingspinner"> Processing  ...	</p>
+	  </div>
+	</div>
+
+    </div><!--  mainContent--> 
+</div> <!-- end wrap -->
+
+<!--#include virtual="/testfixture/includes/page_footer_bs.html"-->
+<!--#include virtual="/testfixture/includes/page_javascript_bs.html"-->
+
+</body>
+</html>
